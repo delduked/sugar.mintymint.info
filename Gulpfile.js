@@ -34,7 +34,7 @@ gulp.task('sass', function() {
 
 // JavaScript Concatenation
 gulp.task('concat-js', function() {
-   return gulp.src(['site/js/js-lib/jquery.js', 'site/js/js-lib/functions.js'])
+   return gulp.src(['site/js/js-lib/jquery.js', 'site/js/js-lib/papaparse.js', 'site/js/js-lib/functions.js'])
       //specify which files are to be combined in which order
       .pipe(concat('all.js'))
       //specifies which file stores the concatenated js files
