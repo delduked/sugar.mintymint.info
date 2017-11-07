@@ -1,0 +1,28 @@
+doctype html
+html
+    header
+        title Sugar Levels
+        link(rel='stylesheet', type='text/css', href='/css/index.css')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    body
+        .wrap
+            .interact
+                h1 BG recording
+                .sugar-wrap
+                    ul
+                        li
+                            label(for="bg") What's you BG?
+                        li 
+                            input#bg(type="text" data-mask="000")
+                .password-wrap
+                    ul
+                        li
+                            label(for="pwd") Enter password to continue.
+                        li 
+                            input#pwd(type="text")
+                    .button-wrap
+                        button(onclick="insertLevels()") Insert Levels
+            .display
+                ul
+                    li History
+script(src="/all.js")
