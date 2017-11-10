@@ -21,7 +21,7 @@ function getCSV() {
         };
         console.log(myBG);
         for (i = 0; i < myBG.length-1; i++){
-            $('.display ul').append('<li>'+myBG[i][0]+";"+myBG[i][1]+'</li>');
+            $('.display ul').append('<li><em>'+myBG[i][0]+"</em><strong>"+myBG[i][1]+'<strong></li>');
         }
     });
 }

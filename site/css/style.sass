@@ -43,6 +43,14 @@ input
     border-top: none
     border-right: none
     border-left: none
+    color: white
+    width: 200px
+input:hover, input:focus
+    border-bottom: 1px $highlight solid
+    border-top: none
+    border-right: none
+    border-left: none
+    outline: none
 
 label
     margin-left: -35px
@@ -83,14 +91,29 @@ label
     flex-direction: column
 
     li
-        padding-bottom: 5px
+        height: 50px
+        padding: 5px 0px
         text-align: left
         list-style: none
+        display: flex
+        align-items: baseline
+
     li:first-child
         font-weight: bold
         color: $highlight
     li:nth-child(2)
         margin-top: 10px
+
+em
+    color: $topaz
+    font-weight: bold
+    font-size: 20px
+    text-align: center
+
+strong
+    margin-left: 20px
+    text-align: center
+
 
 button
     float: right
