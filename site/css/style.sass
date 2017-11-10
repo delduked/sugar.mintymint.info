@@ -96,7 +96,13 @@ label
         text-align: left
         list-style: none
         display: flex
-        align-items: baseline
+        align-items: center
+        transition: all 200ms ease-in-out
+
+    li:hover
+        background-color: $underlight
+    li:hover > em
+        font-size: 30px
 
     li:first-child
         font-weight: bold
@@ -107,8 +113,14 @@ label
 em
     color: $topaz
     font-weight: bold
-    font-size: 20px
-    text-align: center
+    font-size: 25px
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+    width: 50px
+    text-align: left
+    transition: all 200ms ease-in-out
 
 strong
     margin-left: 20px

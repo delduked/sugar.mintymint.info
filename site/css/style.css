@@ -123,9 +123,15 @@ label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out; }
+  .display ul li:hover {
+    background-color: #7c7f92; }
+  .display ul li:hover > em {
+    font-size: 30px; }
   .display ul li:first-child {
     font-weight: bold;
     color: #40b1d1; }
@@ -135,8 +141,21 @@ label {
 em {
   color: #ffd07b;
   font-weight: bold;
-  font-size: 20px;
-  text-align: center; }
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 50px;
+  text-align: left;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; }
 
 strong {
   margin-left: 20px;
