@@ -1,20 +1,57 @@
 //color set1
-$bg: #0d3b66
-$accent: #e94f37
-$text: #f6f7eb
-$bright-blue: #008ACE
-$comp-red: #8c271e
-$otherbg: #FDFFFC
+$bg: #2f3243
+$lookatme: #3a3f53
+$select: #282b3a
+$highlight: #40b1d1
+$underlight: #7c7f92
+
+$goldenrod: #b1740f
+$topaz: #ffd07b
+
+$flowerblue: #2f97c1
+$cerrilean: #1ccad8
+
+
+
+html
+    min-height: 100%
+    background-color: $bg
 
 body
     margin: 0
     width: 100%
+    font-family: 'Lato', sans-serif
+    min-height: 100%
+    background-color: $bg
+    color: white
+h1
+    color: $highlight
+button
+    color: white
+    background-color: $highlight
+    border-radius: 2px
+    box-shadow: none
+    border: none
+    width: 125px
+    height: 40px
+    font-weight: bold
+    font-size: 15px
+
+input
+    background-color: $lookatme
+    border-bottom: 1px $highlight solid
+    border-top: none
+    border-right: none
+    border-left: none
+
+label
+    margin-left: -35px
 .wrap
     display: flex
     justify-content: center
-    align-items: flex-start
+    align-items: stretch
     width: 98%
-    padding: 2%
+    padding: 0 1%
     flex: 0 1 95%
 .sugar-wrap, .password-wrap
     display: flex
@@ -24,21 +61,37 @@ body
 .interact, .display
     flex: 0 1 36%
     padding: 1%
+.interact
+    background-color: $lookatme
+
 
 .sugar-wrap ul, .password-wrap ul
     display: inline-flex
     justify-content: space-between
-    align-items: baseline
+    align-items: stretch
     flex-direction: row
     text-decoration: none
     list-style: none
+
+.display
+    align-items: stretch
+    background-color: $lookatme
+
 .display ul
     display: flex
     justify-content: flex-start
     flex-direction: column
-    align-items: flex-start
+
     li
+        padding-bottom: 5px
         text-align: left
+        list-style: none
+    li:first-child
+        font-weight: bold
+        color: $highlight
+    li:nth-child(2)
+        margin-top: 10px
+
 button
     float: right
 
@@ -47,3 +100,9 @@ button
         flex-direction: column
     .interact, .display
         flex: 0 1 60%
+    .display
+        align-items: stretch
+        background-color: $lookatme
+        border-left: none
+    .sugar-wrap ul, .password-wrap ul
+        max-width: 80%
