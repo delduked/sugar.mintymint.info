@@ -16,6 +16,7 @@ $cerrilean: #1ccad8
 html
     min-height: 100%
     background-color: $bg
+    min-width: 360px
 
 body
     margin: 0
@@ -53,13 +54,20 @@ input
     border-right: none
     border-left: none
     color: white
-    width: 200px
+    width: 150px
+    transition: all 200ms ease-in-out
+    appearance: none
 input:hover, input:focus
-    border-bottom: 1px $highlight solid
+    border-bottom: 1px $topaz solid
     border-top: none
     border-right: none
     border-left: none
     outline: none
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    margin: 0
 
 label
     margin-left: -35px
@@ -69,7 +77,7 @@ label
     align-items: stretch
     width: 98%
     padding: 0 1%
-    flex: 0 1 95%
+    //flex: 0 1 95%
 .sugar-wrap, .password-wrap
     display: flex
     justify-content: flex-start
@@ -97,7 +105,10 @@ label
 .display ul
     display: flex
     justify-content: flex-start
+    align-items: baseline
     flex-direction: column
+    flex: 0 1 48%
+    //max-width: 300px
 
     li
         height: 50px
@@ -107,6 +118,7 @@ label
         display: flex
         align-items: center
         transition: all 200ms ease-in-out
+        justify-content: space-around
 
     li:hover
         background-color: $underlight
@@ -137,16 +149,28 @@ strong
 
 
 button
-    float: right
+    margin-left: 25px
+    margin-top: 10px
+    display: block
+
 
 @media screen and (max-width: 840px)
     .wrap
         flex-direction: column
     .interact, .display
         flex: 0 1 60%
+    .interact
+        padding-top: 2%
+        margin-top: 2%
     .display
         align-items: stretch
         background-color: $lookatme
         border-left: none
+    .display ul
+        display: flex
+        align-items: center
+        li
+            margin-right: 30px
+        //max-width: 250px
     .sugar-wrap ul, .password-wrap ul
         max-width: 80%
