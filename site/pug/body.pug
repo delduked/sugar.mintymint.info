@@ -5,6 +5,16 @@
         .sugar-wrap
             ul
                 li
+                    label(for="#time") What time is it?
+                li
+                    input#time(type="time")
+            ul
+                li
+                    label(for="carb") How many carbs?
+                li
+                    input#carb(type="number")
+            ul
+                li
                     label(for="bg") What's you BG?
                 li 
                     input#bg(type="number" data-mask="000")
@@ -12,3 +22,15 @@
     .display
         ul
             li
+                em 4.5
+                strong Nov 7, 2017
+                i 2:30pm
+            li
+                em 5.9
+                strong Nov 6, 2017
+                i 1:30pm
+            li
+                em 7.2
+                strong Nov 5, 2017
+                i 12:00pm
+                

@@ -34,7 +34,10 @@ button {
   width: 125px;
   height: 40px;
   font-weight: bold;
-  font-size: 15px; }
+  font-size: 15px;
+  margin-left: 25px;
+  margin-top: 40px;
+  display: block; }
 
 input {
   background-color: #3a3f53;
@@ -153,17 +156,32 @@ label {
             align-items: center;
     -webkit-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .display ul li:hover {
     background-color: #7c7f92; }
   .display ul li:hover > em {
     font-size: 30px; }
   .display ul li:first-child {
     font-weight: bold;
-    color: #40b1d1; }
-  .display ul li:nth-child(2) {
-    margin-top: 10px; }
+    color: #40b1d1;
+    margin-top: 18px; }
+
+.display ul li strong, .display ul li em, .display ul li i {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center; }
+
+i {
+  color: #1ccad8;
+  padding: 0px 10px;
+  font-weight: bold; }
+
+strong {
+  color: white;
+  width: 90px; }
 
 em {
   color: #ffd07b;
@@ -180,18 +198,13 @@ em {
           align-items: center;
   height: 100%;
   width: 50px;
-  text-align: left;
+  text-align: center;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out; }
 
 strong {
   margin-left: 20px;
   text-align: center; }
-
-button {
-  margin-left: 25px;
-  margin-top: 10px;
-  display: block; }
 
 @media screen and (max-width: 840px) {
   .wrap {
